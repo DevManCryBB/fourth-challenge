@@ -1,0 +1,21 @@
+body {
+    background-color: lightcoral;
+}
+
+.container {
+    display: inline-table;
+    background-color: coral;
+    color: azure;
+    margin: 200px;
+    border: 20px;
+    padding: 25px;
+}
+
+#answers {
+    border: 5px;
+
+}
+
+#ansers, #answers1, {
+    
+}
