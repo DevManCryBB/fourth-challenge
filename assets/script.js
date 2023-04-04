@@ -5,6 +5,7 @@ var question2 = document.getElementById("question2")
 var question3 = document.getElementById("question3")
 var question4 = document.getElementById("question4")
 var question5 = document.getElementById("question5")
+var finalScoreEl = document.getElementById('final-score')
 var buttons = document.querySelectorAll("button")
 var questionNumber = 0
 var score = 0
@@ -22,8 +23,9 @@ function answers(event){
 console.log(event.target) 
 }
 
-function highScore(){
+function highScoreFun(){
   highScore.setAttribute("class", "container")
+  finalScoreEl.textContent = score;
 }
 
 //Display and hide questions
@@ -47,7 +49,7 @@ if (event.target.getAttribute("data-question")=== "1"){
 }if (event.target.getAttribute("data-question")=== "5"){
     question5.setAttribute("class", "container hidden")
 
-  highScore()
+  highScoreFun()
   
 }
 }
