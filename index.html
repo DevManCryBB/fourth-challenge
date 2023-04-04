@@ -15,68 +15,73 @@
 <body>
     <main class="container" id="quiz">
 
-        <section class="container" id="high-scores">You scored: </section>
+        <section class="container hidden" id="high-scores">You scored: </section>
 
         <section class="container" id="countdown-timer">Time Left: </section>
 
-        <div class="container" id="question1">
+        <!-- <section class="container"><section><p id="score">Score</p></section> -->
+
+        <div data-question= "1" class="container" id="question1">
         
             <section class="container" id="questions">What is considered a polydactyl cat?</section>
             
             <section class="container" id="answers">
-                <button class="container" id="q1">Cat with 6 or more toes</button>
-                <button class="container" id="q2">Jurassic Era cat</button>
-                <button class="container" id="q3">Cat with no toes</button>
-                <button class="container" id="q4">Cat with 4 eyes</button>
+                <button data-question= "1" data-attribute= "true" class="container" id="q1">Cat with 6 or more toes</button>
+                <button data-question= "1" data-attribute= "false" class="container" id="q2">Jurassic Era cat</button>
+                <button data-question= "1" data-attribute= "false" class="container" id="q3">Cat with no toes</button>
+                <button data-question= "1" data-attribute= "false" class="container" id="q4">Cat with 4 eyes</button>
             </section>
         </div>
 
-        <div class="container" id="question2">
-            <section class="container" id="questions2">What kind of diet does a cat eat</section>
+        <div data-question= "2" class="container hidden" id="question2">
+
+            <section class="container" id="questions2">What kind of diet does a cat eat?</section>
             
             <section class="container" id="answers2">
-                <button class="container" id="q5">vegetarian</button>
-                <button class="container" id="q6">vegan</button>
-                <button class="container" id="q7">carnivore</button>
-                <button class="container" id="q8">cannibalism</button>
+                <button data-question= "2" data-attribute= "false" class="container" id="q5">vegetarian</button>
+                <button data-question= "2" data-attribute= "false" class="container" id="q6">vegan</button>
+                <button data-question= "2" data-attribute= "true" class="container" id="q7">carnivore</button>
+                <button data-question= "2" data-attribute= "false" class="container" id="q8">cannibalism</button>
             </section>
         </div>
 
-        <div class="container" id="question3">
+        <div data-question= "3" class="container hidden" id="question3">
+
             <section class="container" id="questions3">Which is the deadliest cat?</section>
             
             <section class="container" id="answers3">
-                <button class="container" id="q9">Leopard</button>
-                <button class="container" id="q10">Lion</button>
-                <button class="container" id="q11">Cheetah</button>
-                <button class="container" id="q12">Black-footed cat</button>
+                <button data-question= "3" data-attribute= "false" class="container" id="q9">Leopard</button>
+                <button data-question= "3" data-attribute= "false" class="container" id="q10">Lion</button>
+                <button data-question= "3" data-attribute= "false" class="container" id="q11">Cheetah</button>
+                <button data-question= "3" data-attribute= "true" class="container" id="q12">Black-footed cat</button>
             </section>
         </div>
         
-        <div class="container" id="question4">
+        <div data-question= "4" class="container hidden" id="question4">
+
             <section class="container" id="questions4">How many toes is a cat supposed to have?</section>
            
             <section class="container" id="answers4">
-                <button class="container" id="q13">5</button>
-                <button class="container" id="q14">4</button>
-                <button class="container" id="q15">3</button>
-                <button class="container" id="q16">6</button>
+                <button data-question= "4" data-attribute= "true" class="container" id="q13">5</button>
+                <button data-question= "4" data-attribute= "false" class="container" id="q14">4</button>
+                <button data-question= "4" data-attribute= "false" class="container" id="q15">3</button>
+                <button data-question= "4" data-attribute= "false" class="container" id="q16">6</button>
             </section>
             </section>
         </div>
 
-        <div class="container" id="question5">
+        <div data-question= "5" class="container hidden" id="question5">
+
             <section class="container" id="questions5">What is the fastest cat in the world?</section>
             
             <section class="container" id="answers5">
-                <button class="container" id="q17">Lion</button>
-                <button class="container" id="q18">Tiger</button>
-                <button class="container" id="q19">Cheetah</button>
-                <button class="container" id="q20">Leopard</button>
+                <button data-question= "5" data-attribute= "false" class="container" id="q17">Lion</button>
+                <button data-question= "5" data-attribute= "false" class="container" id="q18">Tiger</button>
+                <button data-question= "5" data-attribute= "true" class="container" id="q19">Cheetah</button>
+                <button data-question= "5" data-attribute= "false" class="container" id="q20">Leopard</button>
             </section>
         </div>
 
-        <section class="container" id="score"></section>
     </main>
 
     <script src="./assets/script.js"></script>
