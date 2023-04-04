@@ -2,12 +2,24 @@ body {
     background-color: darkcyan;
 }
 
+header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
 #question1, #question2, #question3, #question4, #question5 {
- 
     background-color: bisque;
-    border: 10px;
+    border-radius: 5px;
     color: darkblue;
-    /* display: block; */
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
 }
 
 .hidden {
@@ -16,10 +28,11 @@ body {
 
 #questions, #questions1, #questions2, #questions3, #questions4, #questions5 {
     background-color: cadetblue;
+    border-radius: 5px;
 }
 
 #q1, #q2, #q3, #q4, #q5, #q6, #q7, #q8, #q9, #q10, #q11, #q12, #q13, #q14, #q15, #q16, #q17, #q18, #q19, #q20 {
-    background-color: antiquewhite;
+    background-color: burlywood;
     color: black;
     display: flex;
     border-radius: 25px;

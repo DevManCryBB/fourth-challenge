@@ -10,7 +10,7 @@ var buttons = document.querySelectorAll("button")
 var questionNumber = 0
 var score = 0
 
-
+// check answers
 function answers(event){
   if (event.target.getAttribute("data-attribute")=== "true"){
     score++
@@ -23,6 +23,7 @@ function answers(event){
 console.log(event.target) 
 }
 
+// display high score
 function highScoreFun(){
   highScore.setAttribute("class", "container")
   finalScoreEl.textContent = score;
